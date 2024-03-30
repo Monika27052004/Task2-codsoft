@@ -1,0 +1,346 @@
+* {
+    margin: 0px;
+    font-family: 'Poppings',sans-serif;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 56px;
+    width: 100%;
+    background-color: #112734;
+    position: fixed;
+    top: 0px;
+}
+.nav-content {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-content :hover {
+      background-color: #4183aa; }
+.add-first {
+    margin-left: 510px;}
+.main-section {
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    margin-left: 90px;}
+.section-first {
+    display: flex;
+}
+.first1 {
+    font-size: 26px;
+}
+.first2 {
+    margin-left: 9px;
+    font-size: 33px;
+    color: #d3902a;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.first3{
+    font-size: 44px;
+    color: #FF9800; 
+    margin-top: 0px;
+}
+.first3:hover {
+    animation: pulse 0.6s ease infinite alternate; /* Pulse animation on hover */
+    color: #7fa9c2;
+  }
+ @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1.05);
+    }}
+.section-two {
+        font-size: 17px;
+        display: flex;
+}
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    right: 0;
+    transform: translateY(-40%);
+    max-width: 240px;
+    height: 200px;
+}
+.download {
+    height: 25px;
+    width: 140px;
+    font-size: 19px;
+    background-color: #076fab;
+    color: #153847;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+.download :hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.icon-container {
+    font-size: 25px;
+    margin-top: 30px;   
+}
+.icon-container a {
+    margin-right: 0px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.icon-container a:hover{
+    color:#FF9800;
+    transform: translateY(-7px);
+}
+.about-section {
+    height: 100px;
+    width: 100%;
+    margin-top: 95px;
+}
+.about {
+    display: flex;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    margin-left: 84px;
+    position: relative;
+    text-decoration: none;
+}
+.about::before {
+    content: ''; /* Create pseudo-element for underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16%;
+    height: 3px; /* Adjust the underline thickness as needed */
+    background-color: #FF9800; /* Color of the underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+
+}
+.about:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+.intro-details {
+    font-size: 25px;
+    color: white;
+    margin-left: 370px;
+    margin-top: -35px ;
+}
+.details {
+    height: 135px;
+    width: 700px;
+    font-size: 17px;
+    margin-left: 370px;
+    color: white;
+    border:2px 2px 2px solid black ;
+    align-items: center;
+}
+.education {
+    margin-left: 370px;
+    color: white;
+    font-size: 19px;
+}
+.education h3 :hover{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.education-design {
+    height: 100px;
+    width: 520px;
+    background-color: #244d5e;
+    text-align: center;
+    border-radius: 6px;
+    color: #daa75b;
+    font-style:oblique;
+    border: 3px solid #FF9800;
+}
+.education :hover{
+   background-color: #0d2028;
+   transform: translateY(-8px);
+}
+.skills {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 60px;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.skills::before {
+    content: ''; /* Create pseudo-element for underline */
+    position: absolute;
+    bottom: 50px;
+    left: 470px;
+    width: 12%;
+    height: 3px; /* Adjust the underline thickness as needed */
+    background-color: #FF9800; /* Color of the underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+.skills:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+.projects {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
+.projects::before {
+    content: ''; /* Create pseudo-element for underline */
+    position: absolute;
+    bottom: 5px;
+    left: 455px;
+    width: 15%;
+    height: 3px; /* Adjust the underline thickness as needed */
+    background-color: #FF9800; /* Color of the underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+
+}
+.projects:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+.divison{
+    display: flex;
+    height: 450px;
+}
+.divison :hover{
+    background-color: #0b1b22;
+    transform:scale(1.08,1.08);
+}
+.tech-skills {
+    height: 300px;
+    width: 260px;
+    background-color: #244d5e;
+    margin-left: 200px;
+    font-size: 16px;
+    color: #c58629;
+    border-radius: 15px;
+    border: 5px solid #FF9800;
+}
+.proff-skills {
+    height: 300px;
+    width: 260px;
+    background-color: #244d5e;
+    margin-left: 130px;
+    font-size: 16px;
+    color: #c58629;
+    border-radius:15px ;
+    border: 5px solid #FF9800;
+}
+.project-section {
+    height: 500px;
+    width: 100%;
+}
+.project-name{
+    font-size: 18px;
+    color: black;
+    display: flex;
+    font-style: italic;
+}
+.image1-border {
+    border: 10px groove #a84b0a;
+}
+.image2-border {
+    border:10px groove #a84b0a;
+}
+.image3-border {
+    border: 10px groove #a84b0a;
+}
+#contact{
+    height: 450px;
+    width: 100%;
+    color: white;
+}
+.contact-left {
+    flex-basis: 35%;
+    margin-left: 84px;
+}
+.sub-title {
+    color: white;
+    position: relative; /* Required for absolute positioning of pseudo-element */
+    text-decoration: none; /* Remove default underline */
+  } 
+.sub-title::before {
+    content: ''; /* Create pseudo-element for underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 48%;
+    height: 3px; /* Adjust the underline thickness as needed */
+    background-color: #FF9800; /* Color of the underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;}
+.sub-title:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */}
+.contact-right {
+    flex-basis: 60%;}
+.contact-left p {
+    margin-top: 32px;
+    font-size: 20px;}
+.contact-left p i {
+    color:#FF9800;
+    margin-right: 15px;
+    font-size: 25px;}
+.social-icons {
+    margin-top: 39px;
+    font-size: 31px;}
+.social-icons a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition : transform 0.5s;}
+.social-icons a :hover{
+    color:#FF9800;
+    transform: translateY(-5px);
+}
+.submit{
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    color: #112734;
+    font-size: 18px;
+    background-color: #4183aa;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea {
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: #112734;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background:#112734;
+    font-weight: 300;
+    margin-top: 40px;
+}
